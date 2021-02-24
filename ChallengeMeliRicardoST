@@ -1,0 +1,19 @@
+print('Con este programa obtienes: Arquitectura, procesador, sistema, version, sesiones activas y procesos corriendo')
+
+import platform as pl
+
+prueba_meli_ricardo = [
+   'architecture',
+   'processor',
+   'system',
+   'version',
+]
+
+for ricardo in prueba_meli_ricardo:
+    if hasattr(pl, ricardo):
+       print('%s: %s' % (ricardo, getattr(pl, ricardo)()))
+
+import subprocess
+
+subprocess.call('w')
+subprocess.call('ps')
